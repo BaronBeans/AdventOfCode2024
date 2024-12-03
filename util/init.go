@@ -51,7 +51,7 @@ func getInputFile(day int) {
 	defer file.Close()
 
 	client := &http.Client{}
-	url := fmt.Sprintf("https://adventofcode.com/2023/day/%d/input", day)
+	url := fmt.Sprintf("https://adventofcode.com/2024/day/%d/input", day)
 	req, err := http.NewRequest("GET", url, nil)
 	if err != nil {
 		fmt.Println("Error creating request", err)

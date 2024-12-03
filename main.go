@@ -35,5 +35,6 @@ func runOne(day *int) {
 
 var funcMap = map[string]interface{}{
 	"day1": days.Day1,
+	"day2": days.Day2,
 	//insert here
 }

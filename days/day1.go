@@ -18,7 +18,7 @@ func getInputDay1() string {
 	return strings.TrimRight(string(file), "\n")
 }
 
-func formatInputDay1(input string) ([]int, []int) {
+func parseInputDay1(input string) ([]int, []int) {
 	lines := strings.Split(input, "\n")
 	left := []int{}
 	right := []int{}
@@ -39,7 +39,7 @@ func formatInputDay1(input string) ([]int, []int) {
 }
 
 func day1Part1(input string) {
-	left, right := formatInputDay1(input)
+	left, right := parseInputDay1(input)
 
 	sort.Ints(left)
 	sort.Ints(right)
@@ -67,7 +67,7 @@ func countOccurrences(slice []int, target int) int {
 }
 
 func day1Part2(input string) {
-	left, right := formatInputDay1(input)
+	left, right := parseInputDay1(input)
 
 	answer := 0
 	for _, l := range left {

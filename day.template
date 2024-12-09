@@ -20,12 +20,12 @@ func day{{.}}Part1(input string) {
 	fmt.Println("day {{.}} part 1")
 }
 
-func day{{.}}Part2(input string) {
-	fmt.Println("day {{.}} part 2")
-}
+//func day{{.}}Part2(input string) {
+	//fmt.Println("day {{.}} part 2")
+//}
 
 func Day{{.}}() {
 	input := getInputDay{{.}}()
 	day{{.}}Part1(input)
-	day{{.}}Part2(input)
+	//day{{.}}Part2(input)
 }
